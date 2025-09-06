@@ -3,7 +3,6 @@
 // SASS allows us to break our styles into smaller, focused files called "partials"
 // Partials are prefixed with an underscore (_), and they can be imported into other SASS files
 // This helps keep our code organized, reusable, and easier to maintain
-
 // ==========================================
 // IMPORT ORDER IS IMPORTANT!
 // ==========================================
@@ -18,21 +17,22 @@
 // Example: @use 'partials/variables';
 
 // Step 1: Foundation files (needed by others)
-//@use 'partials/variables';
-//@use 'partials/mixins';
+@use 'partials/variables';
+@use 'partials/mixins';
+// Ensure that 'partials/mixins' only uses variables or mixins from 'partials/variables' and does not depend on base, buttons, or other files imported later.
 
 // Step 2: Base styles
-//@use 'partials/base';
+@use 'partials/base';
 
 // Step 3: Reusable components
-//@use 'partials/buttons';
+@use 'partials/buttons';
 
 // Step 4: Layout sections
-//@use 'partials/navigation';
-//@use 'partials/hero';
-//@use 'partials/categories';
-//@use 'partials/newsletter';
-//@use 'partials/footer';
+@use 'partials/navigation';
+@use 'partials/hero';
+@use 'partials/categories';
+@use 'partials/newsletter';
+@use 'partials/footer';
 
 // ==========================================
 // WHY THIS ORGANIZATION?

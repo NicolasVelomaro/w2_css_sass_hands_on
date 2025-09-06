@@ -1,0 +1,27 @@
+ .main-nav{
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+
+    .nav-brand{
+        font-size: 2rem;
+        color: red;
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 1.5rem;
+
+        li a{
+            text-decoration: underline;
+            color: rgb(60, 144, 177);
+            font-weight: 600;
+            font-size: 1.1rem;
+
+            &:hover {
+                color: brown;
+            }
+        }
+    }
+ }
